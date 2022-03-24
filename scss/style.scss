@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+@import "variables";
+@import "header";
+@import "home";
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subheading{
+    font-size: 14px;
+    color: $secondary-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.section-heading{
+    font-size: 38px;
+    color: $main-color;
+    font-weight: 700;
+}
+
