@@ -2,9 +2,16 @@
 @import "variables";
 @import "header";
 @import "home";
+@import "footer";
 
 *{
     font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    @media (min-width: 1920px) {
+        max-width: 1600px;
+    }
 }
 
 .subheading{
@@ -17,11 +24,14 @@
 
 .section-heading{
     font-size: 38px;
-    color: $main-color;
     font-weight: 700;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
 
     @media (max-width: 768px) {
         font-size: 30px;
     }
 }
-

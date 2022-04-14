@@ -1,0 +1,103 @@
+.footer{
+    background-color: $lightgrey-color;
+    padding-bottom: 30px;
+
+    .container{
+        border-top: 2px solid #E6E6F0;
+        padding-top: 30px;
+    }
+
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &-address{
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .subheading{
+        font-size: 12px;
+        }
+
+        .footer-address-inner{
+            margin: 0;
+
+            &:after{
+                content:"";
+                width: 6px;
+                height: 6px;
+                background-color: $grey-color;
+                border-radius: 50%;
+                display: inline-block;
+                margin: 0 10px;
+                transform: translateY(-2px);
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &-fb, &-tel{
+        &:after{
+            content:"";
+            width: 6px;
+            height: 6px;
+            background-color: $grey-color;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 10px;
+            transform: translateY(-2px);
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+
+    .contacts{
+
+        margin-top: 21px;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 768px) {
+
+            flex-direction: column;
+        }
+
+        .footer-tel{
+            text-decoration: none;
+            font-weight: 700;
+            color: #46466E;
+
+            @media (max-width: 768px) {
+                margin: 10px 0;
+            }
+        }
+
+        .footer-mail{
+            text-transform: none;
+        }
+    }
+
+    .copy{
+        color: $grey-color;
+        margin: 0;
+
+        @media (max-width: 768px) {
+            margin-top: 30px;
+        }
+    }
+}
