@@ -1,7 +1,6 @@
 .home-intro-sect{
     background-color: #643E72;
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-    padding: 200px 0;
 }
 
 .home-slider-sect .carousel-item{
@@ -231,6 +230,49 @@
 
             .subheading{
                 text-transform: none;
+            }
+        }
+    }
+}
+
+.first-screen {
+    min-height: 100vh;
+    background-image: url(../img/symbol.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    .title{
+        font-size: 38px;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+        margin: auto auto 60px;
+
+        @media (max-width: 992.98px){
+            margin: auto auto 150px;
+        }
+    }
+
+    .button{
+        margin: auto auto 30px auto;
+
+        &:hover {
+            cursor: pointer;
+        }
+    
+        svg {
+            &:hover circle {
+                stroke: $main-color;
+                transition: 0.3s all ease;
+            }
+    
+            &:hover path {
+                stroke: $main-color;
+                transition: 0.3s all ease;
             }
         }
     }
