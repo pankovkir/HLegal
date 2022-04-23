@@ -25,16 +25,21 @@
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+
+    &:hover{
+        color: $main-color;
+        transition: 0.3s all ease;
+}
 }
 
 .section-heading{
     font-size: 38px;
     font-weight: 700;
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     @media (max-width: 768px) {
         font-size: 30px;

@@ -1,6 +1,10 @@
 .home-intro-sect{
     background-color: #643E72;
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+
+    @media (max-width: 574px){
+        padding-bottom: 60px;
+    }
 }
 
 .home-slider-sect .carousel-item{
@@ -184,10 +188,10 @@
             position: absolute;
             left: 112px;
             top: 7px;
-            // transform: translateY(-50%);
         }
     }
 }
+
 
 .publications-inner{
     display: grid;
@@ -255,6 +259,10 @@
         @media (max-width: 992.98px){
             margin: auto auto 150px;
         }
+
+        @media (max-width: 574px){
+            width: 315px;
+        }
     }
 
     .button{
@@ -286,6 +294,10 @@
 
     @media (max-width: 992.98px){
         flex-direction: column;
+    }
+
+    @media (max-width: 768px){
+        padding: 30px 0;
     }
 
     .nav{
@@ -365,4 +377,78 @@
     }
 
 }
+
+.home-benefits{
+    padding-bottom: 60px;
+
+    .home-benefits-heading{
+        padding-bottom: 60px;
+        position: relative;
+
+        @media (max-width: 768px){
+            padding-bottom: 30px;
+        }
+
+        &::before{
+            content:"";
+            background-image: url(../img/arrow.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            left: 72px;
+            top: 7px;
+        }
+
+        .subheading:hover{
+                color: $main-color;
+                transition: 0.3s all ease;
+        }
+
+    }
+    
+    .benefits{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(260px, 1fr));
+        gap: 60px;
+
+        @media (max-width: 992.98px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 768px){
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+    }
+
+    .benefits-item{
+
+        &-text{
+            margin-top: 30px;
+
+            .subheading{
+                text-transform: none;
+                font-size: 22px;
+
+                &:hover{
+                    color: $main-color;
+                    transition: 0.3s all ease;
+                }
+            }
+
+            .benefits-item-info{
+                color: white;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+
+
+
 
