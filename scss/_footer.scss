@@ -66,6 +66,13 @@
         }
     }
 
+    &-fb:hover{
+        path {
+            fill: $main-color;
+            transition: 0.3s all ease;
+        }
+    }
+
     .contacts{
 
         margin-top: 21px;
